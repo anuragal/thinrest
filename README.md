@@ -2,9 +2,9 @@
 REST Implementation using Tastypie library.
 
 Technology:
-    Python 2.7
-    Django 1.5
-    Tastypie 0.12.2
+* Python 2.7
+* Django 1.5
+* Tastypie 0.12.2
 
 Aim:
 To build a simple interface that can provide for CRUD operations for two types of
