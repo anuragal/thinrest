@@ -7,6 +7,7 @@ Technology:
 * Tastypie 0.12.2
 
 Aim:
-To build a simple interface that can provide for CRUD operations for two types of
+
+To build a simple interface that can provide for CRUD operations for two types of Database tables:
 * Column based e.g. EMPLOYEE(FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, ZIP)
 * Key Value pairs e.g. SYSTEM_SETTINGS(SETTING_NAME, SETTING_VALUE)
