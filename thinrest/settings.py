@@ -18,7 +18,7 @@ DJANGO_ROOT = dirname(dirname(abspath(__file__)))
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': normpath(join(DJANGO_ROOT, 'crud.db')),
+        'NAME': normpath(join(DJANGO_ROOT, 'thinrest.db')),
     },
 }
 
@@ -125,8 +125,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'crud',
     'south',
+    'thinrest'
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'

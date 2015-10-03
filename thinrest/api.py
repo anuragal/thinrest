@@ -19,8 +19,8 @@ class EmployeeResource(NamespacedModelResource):
 
 class SettingResource(NamespacedModelResource):
     '''
-    API for model System Setting. 
-    
+    API for model System Setting.
+
     "name" column is used as key for this API.
     As model is having key-value type schema
     '''

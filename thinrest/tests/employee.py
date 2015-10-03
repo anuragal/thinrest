@@ -13,7 +13,7 @@ class EmployeeTest(ResourceTestCase):
 
     def setUp(self):
         super(EmployeeTest, self).setUp()
-        self.url = "http://localhost:8000/crud/api/v1/"
+        self.url = "http://localhost:8000/api/v1/"
         self.end_url = "/?format=json"
         self.GET = "GET"
         self.POST = "POST"

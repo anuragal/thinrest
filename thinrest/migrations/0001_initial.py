@@ -9,7 +9,7 @@ class Migration(SchemaMigration):
 
     def forwards(self, orm):
         # Adding model 'Employee'
-        db.create_table(u'crud_employee', (
+        db.create_table(u'thinrest_employee', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('first_name', self.gf('django.db.models.fields.CharField')(max_length=50)),
             ('last_name', self.gf('django.db.models.fields.CharField')(max_length=50)),
@@ -18,27 +18,27 @@ class Migration(SchemaMigration):
             ('state', self.gf('django.db.models.fields.CharField')(max_length=50)),
             ('zip_code', self.gf('django.db.models.fields.CharField')(max_length=10)),
         ))
-        db.send_create_signal(u'crud', ['Employee'])
+        db.send_create_signal(u'thinrest', ['Employee'])
 
         # Adding model 'SystemSetting'
-        db.create_table(u'crud_systemsetting', (
+        db.create_table(u'thinrest_systemsetting', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('name', self.gf('django.db.models.fields.CharField')(max_length=10)),
             ('value', self.gf('django.db.models.fields.CharField')(max_length=200)),
         ))
-        db.send_create_signal(u'crud', ['SystemSetting'])
+        db.send_create_signal(u'thinrest', ['SystemSetting'])
 
 
     def backwards(self, orm):
         # Deleting model 'Employee'
-        db.delete_table(u'crud_employee')
+        db.delete_table(u'thinrest_employee')
 
         # Deleting model 'SystemSetting'
-        db.delete_table(u'crud_systemsetting')
+        db.delete_table(u'thinrest_systemsetting')
 
 
     models = {
-        u'crud.employee': {
+        u'thinrest.employee': {
             'Meta': {'object_name': 'Employee'},
             'address': ('django.db.models.fields.CharField', [], {'max_length': '200'}),
             'city': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
@@ -48,7 +48,7 @@ class Migration(SchemaMigration):
             'state': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
             'zip_code': ('django.db.models.fields.CharField', [], {'max_length': '10'})
         },
-        u'crud.systemsetting': {
+        u'thinrest.systemsetting': {
             'Meta': {'object_name': 'SystemSetting'},
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '10'}),
@@ -56,4 +56,4 @@ class Migration(SchemaMigration):
         }
     }
 
-    complete_apps = ['crud']
+    complete_apps = ['thinrest']

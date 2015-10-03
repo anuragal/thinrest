@@ -8,7 +8,7 @@
         "state": "Maharashtra",
         "zip_code": "411057"
     },
-    "model": "crud.employee",
+    "model": "thinrest.employee",
     "pk":1
 },
 {
@@ -16,7 +16,7 @@
         "name": "email",
         "value": 1
     },
-    "model": "crud.systemsetting",
+    "model": "thinrest.systemsetting",
     "pk": 1
 }
 ]
