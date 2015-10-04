@@ -28,7 +28,7 @@ To build a simple interface that can provide for CRUD operations for two types o
         )
     ```
 
-3. Include the thinrest URLs to a path of your choice
+3. Include the thinrest URLs
 
     ```python
     patterns = ('',
