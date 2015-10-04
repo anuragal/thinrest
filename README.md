@@ -42,6 +42,7 @@ To build a simple interface that can provide for CRUD operations for two types o
 ####Employee Table
 
 Sample Data:
+
 ```{
     "fields": {
         "first_name": "Anurag",
@@ -66,6 +67,7 @@ Employee DETELE: DELETE http://www.example.com/thinrest/api/v1/employee/1/
 ####Settings Table
 
 Sample Data:
+
 ```{
     "fields": {
         "name": "email",
@@ -73,8 +75,8 @@ Sample Data:
     },
     "model": "thinrest.systemsetting",
     "pk": 1
-}
-```
+}```
+
 Setting LIST: GET http://www.example.com/thinrest/api/v1/setting?format=json
 
 Setting DETAIL: GET http://www.example.com/thinrest/api/v1/setting/email?format=json
