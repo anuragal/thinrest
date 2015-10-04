@@ -13,7 +13,7 @@ class SystemSettingTest(ResourceTestCase):
 
     def setUp(self):
         super(SystemSettingTest, self).setUp()
-        self.url = "http://localhost:8000/api/v1/"
+        self.url = "/thinrest/api/v1/"
         self.end_url = "/?format=json"
         self.GET = "GET"
         self.POST = "POST"
