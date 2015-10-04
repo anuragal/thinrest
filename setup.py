@@ -13,7 +13,7 @@ setup(
     license=open('LICENSE').read(),
     zip_safe=False,
     install_requires = (
-            'Django>=1.5',
+            'Django==1.5',
             'django-tastypie>=0.12.2',
             'South>=0.7.6'
         ),
