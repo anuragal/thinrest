@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='thinrest',
-    version='1.0.0',
+    version='2.0.0',
     description='Rest implementation using Tastypie.',
     long_description=open('README.md').read(),
     author='Anurag Agarwal',
@@ -13,7 +13,7 @@ setup(
     license=open('LICENSE').read(),
     zip_safe=False,
     install_requires = (
-            'Django==1.5',
+            'Django==1.5.12',
             'django-tastypie>=0.12.2',
             'South>=0.7.6'
         ),

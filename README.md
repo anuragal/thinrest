@@ -4,7 +4,7 @@
 
 ## Technology
 * Python 2.7
-* Django 1.5
+* Django 1.5.12
 * Tastypie 0.12.2
 
 ## Aim
