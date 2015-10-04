@@ -66,6 +66,8 @@ Employee DETELE: DELETE http://www.example.com/thinrest/api/v1/employee/1/
 
 ####Settings Table
 
+Settings table is a key-value pair type table. Passing `id` to REST will not work for this type of table. So little tweaking is done in api of this table to handle column `name` as input param.
+
 Sample Data:
 
 ```{
